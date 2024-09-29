@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		#dd{
+			font-size: 30px;
+			color: red;
+				}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+	
+
+	function myFunction(){
+
+	var x,data;	
+		x=document.getElementById("ss").value;
+
+		if (x.length == 10 && !isNaN(x)) {
+			data ="Input valid";
+		}
+
+		else{
+			data="Input not valid";
+			alert("Please Enter 10 digits phone number");
+		}
+		document.getElementById("dd").innerHTML=data;
+	}
+	</script>
+
+	<form>
+		
+		<input type="text" id="ss" name="">
+		<input type="button" name="" onclick="myFunction()" value="submit">
+	</form>
+
+	<div id="dd"></div>
+
+</body>
+</html>

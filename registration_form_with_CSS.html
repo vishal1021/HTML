@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form Css</title>
+	<style type="text/css">
+		html{
+			background-color: lightslategray;
+			text-align: center;
+		}
+		*{
+			font-family: Actor;
+			font-style: bold;
+		}
+
+		table{
+			background-color: snow;
+			margin-top: 50px;
+			padding: 20px;
+		}
+		.main_header{
+			font-size: 30px;
+		}
+		#submit_button{
+			background-color: limegreen;
+			color: white;
+			font-size: 20px;
+			
+		}
+		#headline{
+			padding-bottom: 15px;
+		}
+		input,select{
+			padding: 5px;
+			font-size: 15px;
+		}
+
+		td{
+			padding: 8px;
+		}
+
+		#input_email{
+			
+		}
+		#td_submit_button{
+			padding-top: 20px;
+			padding-right: 10px;
+			padding-left: 10px;
+
+		}
+		#submit_button{
+			padding-right: 130px;
+			padding-left: 130px;
+		}
+		#checkbox{
+			padding-top: 20px;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<td class="main_header" colspan="2">--- Register ---</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="headline">Create your account. It's free and only takes a minute.</td>
+		</tr>
+		<tr>
+			<td align="left"><input type="name" placeholder="First Name" name="FirstName" class="input_text" id="input_firstname"></td>
+			<td align="right"><input type="name" placeholder="Last name" name="LastName" class="input_text" id="input_lastname"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="Email" placeholder="Email" name="Email" class="input_text" id="input_email" size="45"></td>
+		</tr>
+		<tr>
+			<td align="left"><select style="padding-right: 42px;">
+				<option selected="selected" disabled="disable">Country</option>
+				<option>India (+91)</option>
+				<option>Pakistan (+92)</option>
+				<option>Bangladesh (+93)</option>
+				</select></td>
+				<td align="right">
+				<input type="tel" placeholder="Enter your Mobile no." name="phone"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="Password" name="Password" placeholder="Password" size="45"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="Password" name="Password" placeholder="Confirm Password" size="45"></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="checkbox" align="left"><input type="checkbox" name="checkbox">I accept the <font color="green">Terms of Use</font> & <font color="green">Privacy Policy.</font></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="td_submit_button"><input type="submit" value="Register Now" name="" id="submit_button"></td>
+		</tr>
+	</table>
+
+</body>
+</html>

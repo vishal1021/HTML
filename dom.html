@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<!--DOM - Document Object model
+
+	The document object represent the whole html document.
+
+	when the document is loaded in the browser it becomes document object.
+	
+	fatch value using predefine functions that are -
+
+	1)document.getElementById()
+
+	2)document.getElementBy
+
+
+	-->
+
+	<!--fatch value with out using predefine function-->
+
+<!--
+	<form name="form">
+		Enter Your Name<input type="name" placeholder="Enter Your Name" name="name">
+		<input type="submit" name="" value="Submit" onclick="abc()">
+
+	</form>
+
+
+
+-->
+
+
+	<form name="form2">
+
+		Username:<input type="name" name="name">
+		Password:<input type="Password" name="password">
+		<input type="submit" value="submit" name="" onclick="abcd()">
+		
+
+
+	</form>
+
+	<script type="text/javascript">
+		
+
+
+		function abcd(){
+
+			var user = document.form2.name.value;
+			var pass = document.form2.password.value;
+			if (user=="" || user=="null") {
+
+				if (pass=="null" || pass=="") {
+					alert("UserName & Password can't be blank.");
+				}
+				else{
+					alert("UserName can't be blank");
+				}
+
+			}
+			else if (pass=="" || pass=="null"){
+				alert("password can't be blank");
+			}
+
+			else if (pass.length<8){
+				alert("password must be eight characters");
+			}
+
+			else{
+				alert("submitted successfully");
+				window.open("https://www.google.com");
+			}
+		}
+
+
+
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>

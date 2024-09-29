@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="formValidation.js"></script>
+	<style type="text/css">
+		#tt,#gg,#dd,#ee{
+			font-size: 15px;
+			color: red;
+				}
+		#jj{
+			font-size: 20px;
+			color: red;
+				}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button{
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		.form{
+			width: fit-content;
+			height: fit-content;
+			border: 1px solid black;
+			margin: auto;
+			margin-top: 100px;
+			background: rgb(0, 0, 0, 0.1);
+			font-family: arial;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		table{
+			padding: 10px;
+		}
+
+		label{
+			font-size: 25px;
+			padding: 5px;
+		}
+
+		input{
+			font-size: 25px;
+			padding: 5px;
+		}
+
+		.button{
+			margin-top: 40px;
+			border-radius: 10px;
+			margin-bottom: 50px;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="form">
+	<table>
+		
+		<tr><td><label>Name</label></td><td><input type="text" id="nn" name="name" placeholder="Enter Your Name"><div id="tt"></div></td></tr>
+		<tr><td><label>Contact</label></td><td><input type="number" name="phone" placeholder="Enter Contact No." id="cc"><div id="dd"></div></td></tr>
+		<tr><td><label>Email</label></td><td><input type="text" name="email" placeholder="Enter Your Email" id="txtEmail"><div id="ee"></div></td></tr>
+		<tr><td><label>Password</label></td><td><input type="Password" name="password" placeholder="Enter Password" id="pp"><div id="gg"></div></td></tr>
+		<tr><td colspan="2" style="text-align:center;"><input type="button" name="" onclick="myFunction()" value="submit" class="button"><div id="jj"></div></td><tr>
+	</table>
+</div>
+</body>
+</html>

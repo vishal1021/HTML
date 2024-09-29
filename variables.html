@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<!-- Variables -
+		
+		- The variable is the name of the location where the value is stored.
+		- There are no datatypes in javascript.
+		- var is the keyword for variable.
+
+		Types- there are two types of variabe in js 
+
+		1. local
+		2. global
+
+
+		1. local variable - the variable which is declare inside the function or the block.
+
+
+		2. global variable - the variable which is declare outside the function is called is global variable.
+	 -->
+
+
+	 <script type="text/javascript">
+	
+		/* var a = 50;
+		var b = 80.5;
+		var c = a+b;
+
+		document.write(c); */ 	
+
+		document.write("local variable -<br>");
+
+		function abc() {
+			var a=40;
+			var b=50;
+			var c=a-b;
+			document.write("substraction = "+c); // also use comma (,) but for concatination use plus(+) sign
+		}
+
+		abc();
+
+		document.write("<br> global variable - <br>");
+
+
+		var data = "gunjan";
+		function display(){
+
+			document.write(data+"<br>");
+		}
+
+		function display1(){
+			document.write(data);
+		}
+
+		document.write(data+"<br>");
+		display();
+		display1();
+
+	 </script>
+
+</body>
+</html>

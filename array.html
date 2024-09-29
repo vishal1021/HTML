@@ -1,0 +1,51 @@
+<!-- Array-
+
+	It is the collection of similar types of elements at the contiguous memory loaction.
+
+	*Array always start with 0 index position.
+
+	there are 2 ways to create array-
+
+	1)by literal
+
+	2)by new keyword
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var fruits = ["Apple","PineApple","Grapes","Watermelon"];//literal
+		for (var i = 0; i <fruits.length; i++) {
+			document.write(fruits[i]+"<br>");
+		}
+
+		document.write("<br> Places by literal<br>");
+
+		var places = ["Kerela","Pinkcity","Delhi","Mumbai"];
+		for (var i = 0; i <places.length; i++) {
+			document.write(places[i]+"<br>");
+		}
+
+		document.write("<br> Places by new keyword<br>");
+
+		var place = new Array();
+		place[0]="Delhi";
+		place[1]="Noida";
+		place[2]="Gurgaon";
+		for (var i = 0; i <place.length; i++) {
+			document.write(place[i]+"<br>");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+
+	<!--
+
+	toUpperCase() -It is used to convert string in to uppercase letters.
+
+	toLowerCase() -It is used to convert string in to lowercase letters.
+
+	trim() -It is deprecated from js.
+			-It is used to remove the srting and ending whitespace.
+
+	repeat(count) - It is used to repeat any string multiple no. of time.
+
+	slice(beginIndex,endIndex) - It is used to take a part of string for ex- if string = "Welcome Himanshu" then 
+								 String.slice(8,15) is give the only "Himanshu" in return. 
+
+	-->
+
+	<script type="text/javascript">
+		
+		function abc() {
+			var a="abcdefg";
+			
+			var b="ABCD"
+
+			document.write(a.toUpperCase()+"<br>");
+
+			document.write(b.toLowerCase()+"<br>");
+
+			document.write(a.repeat(3)+"<br>");
+
+			document.write(a.slice(0,4));
+
+
+			if (b.includes("C")) {
+				alert("b contains C");
+			}
+		}
+
+
+		abc();
+	</script>
+
+</body>
+</html>

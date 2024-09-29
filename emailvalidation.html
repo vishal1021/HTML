@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<input type="text" id="txtEmail">
+	<input type="submit" name="" onclick="checkEmail()">
+
+
+
+	<script type="text/javascript">
+		function checkEmail() {
+			var email = document.getElementById('txtEmail');
+			var filter = /^([a-zA-Z0-9\_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{3,9})+$/;
+
+			if (!filter.test(email.value)) {
+				alert("Please provide a valid email address.")
+
+				// return false;
+				//The test() method tests for a match in a string.
+				//This method returns true if it finds a match ,otherwise it returns false.
+			}
+			else{
+				alert("submitted Successfully");
+			}
+		}
+	</script>
+
+</body>
+</html>

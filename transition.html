@@ -1,0 +1,56 @@
+<!--- Animation effect of Css 3 
+
+1) Transition Effect-
+
+It is used to add the change in the element gradually from one style to another  without using coral.
+
+2) Multiple transition effect-
+
+--->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#dd{
+			height: 150px;
+			width: 200px;
+			border: 1px solid black;
+			background-color: black;
+			transition: 3s;
+		}
+
+		#dd:hover{
+			width: 400px;
+			height: 400px;
+			
+			
+		}
+
+		#tt{
+			margin-top: 200px;
+			margin-left: 400px;
+			height: 150px;
+			width: 200px;
+			border: 1px solid red;
+			background-color: hotpink;
+			transition: 3s;
+		}
+		#tt:hover{
+			height: 300px;
+			width: 400px;
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="dd"></div>
+	<div id="tt"></div>
+
+
+</body>
+</html>

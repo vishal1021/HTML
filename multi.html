@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ary = [
+        ["sahil", 21, "MCA"],
+        ["ayush", 21, "MCA"],
+        ["harsh", 21, "MCA"],
+        ["vishal", 21, "MCA"],
+        ["shivam", 21, "MCA"],
+        ["rohit", 22, "MCA"],
+        ];
+        document.write("<table border='1px>'");
+        for( var a=0; a<6; a++){
+            document.write("<tr>")
+            for(var b=0; b< 3;b++){
+                document.write("<td>" +ary[a][b] + " </td>" + " ");
+            }
+            document.write( "</tr>");
+        }
+        document.write("</table>'");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
