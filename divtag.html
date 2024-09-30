@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Div Tag</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+        #parent-row-1{
+            width: 500px;
+            height: 250px;
+            background-color: blueviolet;
+        }
+        #parent-row-2{
+            width: 500px;
+            height: 250px;
+            background-color: blue;
+        }
+        .col-1{
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            float: left;
+        }
+        .col-2{
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <div>
-            <div>Home</div>
-            <div>About</div>
-            <div>contact us</div>
+    <div class="main">
+        <div id="parent-row-1">
+            <div class="col-1">Home</div>
+            <div class="col-2">About</div>
+        </div>
+        <hr>
+        <div id="parent-row-2">
+            <div class="col-1">Gallery</div>
+            <div class="col-2">Contact</div>
         </div>
     </div>
 </body>
